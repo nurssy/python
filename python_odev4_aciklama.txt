@@ -1,0 +1,20 @@
+İlk adımda, kelime_frekanslarını_hesapla işlevi, bir metindeki her kelimenin frekansını hesaplar.
+Bu işlev, metindeki her kelimeyi küçük harfe dönüştürür ardından her kelimenin frekansını bir  sözlükte saklar.
+Örneğin, "Yazılı ifade gücü önemlidir." gibi bir metindeki frekanslar şöyle olabilir: 
+{"yazılı": 1, "ifade": 1, "gücü": 1, "önemlidir.": 1}
+
+benzerlik_oranını_hesapla işlevi, iki metnin benzerlik oranını hesaplamak için kullanılır.
+Bu işlev, öncelikle her iki metindeki kelime frekanslarını hesaplar. 
+Daha sonra, her iki metinde de bulunan kelimelerin frekanslarını karşılaştırır.
+Eğer bir kelime her iki metinde de varsa, bu kelimenin frekans farkını hesaplar ve toplam farka ekler. 
+Eğer bir kelime sadece bir metinde varsa, bu kelimenin frekansını toplam farka ekler. 
+Son olarak toplam farkı, toplam kelime sayısına bölerek benzerlik oranını bulur. 
+Örneğin, iki metin şöyle olsun:
+Metin 1: "İnsanın doğası anlaşılmazdır."
+Metin 2: "Doğa insanın bir parçasıdır."
+Bu metinlerde ortak kelimeler "insanın" ve "doğa"dır. 
+Her bir kelimenin frekans farkını hesaplayarak toplam farkı buluruz:
+Toplam fark = |(1-1)| + |(1-1)| + |0-1| + |1-0| = 2
+Toplam kelime sayısı = 5 + 5 = 10
+Benzerlik oranı = 1 - (2 / 10) = 0.8
+Bu şekilde, metinler arasındaki benzerlik oranı hesaplanır.
